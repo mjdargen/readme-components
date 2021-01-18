@@ -45,7 +45,7 @@ const experienceComponentStyles = (data) => {
             ? "0px"
             : "auto 10px auto 0px"
         };
-           }      
+           }
       .img-background,
       img {
         height: 40px;
@@ -83,9 +83,6 @@ const experienceComponentStyles = (data) => {
         margin:auto 3px;
         font-family:'Open Sans', sans-serif;
         font-size:14.5px;
-      }
-      .value::first-letter{
-        text-transform:uppercase;        
       }
       `;
 };

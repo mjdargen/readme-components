@@ -1,6 +1,6 @@
 const colorFiller = require("../utils/colorFiller");
 
-const logoComponentStyles = (fill, textfill, animation, svgfill) => {
+const eightballComponentStyles = (fill, textfill, animation, svgfill) => {
   return `
     foreignObject svg {
         width: 30px;
@@ -26,15 +26,23 @@ const logoComponentStyles = (fill, textfill, animation, svgfill) => {
         border-radius: 50px;
         float: left;
         color: #fff;
-        box-shadow: 5px 5px 2px -2px #a5a5a5;
-        text-transform: capitalize;
+        box-shadow: 5px 5px 2px -2px #78d6b3;
         font-size: 20px;
+        font-family: "Space Mono", monospace;
       }
       .text {
         margin-top: 16px;
         margin-left: 10px;
-        font-size: 1.1rem;
-        white-space:nowrap;
+        font-size: 1rem;
+        white-space: nowrap;
+        font-family: "Space Mono", monospace;
+      }
+      .textlogo {
+        margin-top: 16px;
+        margin-left: 10px;
+        font-size: 1rem;
+        font-weight: bold;
+        white-space: nowrap;
         font-family: "Space Mono", monospace;
       }
       .svg {
@@ -49,4 +57,4 @@ const logoComponentStyles = (fill, textfill, animation, svgfill) => {
       @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
   `;
 };
-module.exports = logoComponentStyles;
+module.exports = eightballComponentStyles;

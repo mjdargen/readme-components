@@ -1,5 +1,5 @@
 const contributorsStyle = () => {
-  return `		   
+  return `
   a{
     text-decoration: none;
     color:inherit;
@@ -34,9 +34,6 @@ const contributorsStyle = () => {
     .header .repo-details .name {
     font-weight: 500; color:#000; font-size: 12px;
     }
-    .name:first-letter{
-       text-transform: uppercase;
-    } 
     .header .image{
     width: 18px; height: 18px; border-radius: 15%;
     }
@@ -60,9 +57,6 @@ const contributorsStyle = () => {
     }
     .contributor .userdetails .name {
     font-weight: 500; color:#ef8236; font-size: 12px;
-    }
-    .name:first-letter{
-       text-transform: uppercase;
     }
     .contributor .userdetails .location{
     font-weight: 400; color: #586069; font-size: 11px
@@ -99,7 +93,7 @@ const contributorsStyle = () => {
     }
     .dark-text{
         color:white !important;
-    }       
+    }
     .divider{
     	height:0.7px;
     	width: 100%;

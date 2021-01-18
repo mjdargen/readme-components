@@ -3,6 +3,7 @@ const faultComponent = require("./fault-component");
 const experienceComponent = require("./experience-component");
 const fetchData = require("./utils/dataFetcher");
 const logoComponent = require("./logo-component");
+const eightballComponent = require("./eightball-component");
 const stackoverflowComponent = require("./stackoverflow-component");
 const contributorsComponent = require("./contributors-component");
 const quoteComponent = require("./quotes-component");
@@ -92,6 +93,21 @@ const createComponent = async (component, params = {}) => {
     case "logo":
       if (logo != undefined) {
         return logoComponent({
+          logo,
+          fill,
+          text,
+          textfill,
+          animation,
+          svgfill,
+          desc,
+          scale,
+        });
+      } else {
+        return faultComponent();
+      }
+    case "eightball":
+      if (logo != undefined) {
+        return eightballComponent({
           logo,
           fill,
           text,
